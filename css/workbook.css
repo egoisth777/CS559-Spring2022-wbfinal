@@ -1,0 +1,309 @@
+/** choose san-serif or serif for the "main font" **/
+/* global setting - everything gets some defaults */
+html {
+  font-family: Cambria, Georgia, serif;
+  background: lightgray; }
+
+/* make the body */
+body {
+  padding-bottom: 33vh; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Calibri, Helvetica, sans-serif; }
+
+/* the div surrounding the body parts - float the sidebar next to the content*/
+.container {
+  background: white;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  min-width: 600px;
+  padding-bottom: 4rem;
+  margin: 25px auto;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end; }
+
+/* this is the main body text */
+.maincolumn {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 600px;
+  margin: 10px;
+  margin-left: 60px;
+  margin-top: 60px;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  min-width: 0; }
+  .maincolumn li {
+    padding-top: .1rem;
+    padding-bottom: .1rem; }
+  .maincolumn li.rubric_item {
+    padding-top: 0rem;
+    padding-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.2; }
+  .maincolumn h1 {
+    font-size: 2rem; }
+  .maincolumn h2 {
+    font-size: 1.6rem; }
+  .maincolumn h3 {
+    font-size: 1.3rem; }
+  .maincolumn h4 {
+    font-size: 1.125rem; }
+  .maincolumn h5 {
+    font-size: 1.125rem; }
+  .maincolumn h6 {
+    font-size: 1.125rem; }
+
+.sidebar {
+  border: 2px grey solid;
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  margin: 10px;
+  margin-top: 80px;
+  padding: 5px;
+  font-size: .75rem;
+  font-family: "Helvetica Narrow", sans-serif; }
+
+/* make the sidebar menu bulletless */
+.Side__List {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0; }
+
+.Side__Item {
+  margin-left: 0;
+  padding: 4px 4px 4px 1rem; }
+
+.Side__Item a {
+  text-decoration: none; }
+
+.Side__Selected {
+  background-color: darkred;
+  color: white; }
+
+/* make the notes on the side look better */
+.Side__Note {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  background-color: lightgrey;
+  font-size: 120%;
+  padding: 4px 4px 4px; }
+
+.sidebar h2 {
+  margin: 0; }
+
+/* in general, underlined links look terrible, so avoid them */
+a:link {
+  text-decoration: none;
+  font-weight: 700; }
+
+a:hover {
+  color: darkred; }
+
+/* make the "for students" links look better 
+   (avoid underlines since they usually have dots in them
+   */
+.for_students {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: monospace; }
+
+/* when we want 2 column side by side things for comparison */
+.leftright {
+  display: flex;
+  flex-direction: row; }
+  .leftright .left {
+    width: 50%;
+    margin-right: 5px; }
+
+.right {
+  width: 50%;
+  margin-left: 5px; }
+
+.highlight pre, .highlight code {
+  font-size: 1rem;
+  font-family: consolas, monaco, monospace; }
+
+/************************************************************************/
+/* Making the exercises look right... */
+/** We always like to put borders around Canvas and SVG */
+canvas {
+  border: 2px solid black; }
+
+svg {
+  border: 2px solid black; }
+
+/** put each example into a box */
+.examplebox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  margin: 15px 5px 15px 5px; }
+
+/** make the summaries a little different */
+.sumbox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  margin: 15px 5px 15px 5px; }
+
+/** simple box for text */
+.simplebox {
+  border: 2px solid black;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  width: 500px; }
+
+.halfbox {
+  border: 2px solid black;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  width: 45%; }
+
+/** a warning box */
+.warnbox {
+  border: 2px solid darkgoldenrod;
+  background-color: #F0E59f;
+  padding: 10px;
+  margin: 10px;
+  width: 80%; }
+
+/** basic button style so things aren't too ugly */
+/* for playing with the buttons */
+.basicbutton {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 8px;
+  background-color: lightgrey; }
+
+.basicbutton:hover {
+  border: 4px solid black; }
+
+.basicbutton:active {
+  color: white;
+  background-color: darkgray; }
+
+/** very plain tables */
+table {
+  border-collapse: collapse; }
+
+table, th, td {
+  border: 1px solid black; }
+
+th, td {
+  padding: 3px; }
+
+li {
+  margin-bottom: 10px; }
+
+/*********************************************/
+/* stuff for expand (adapted from book) */
+.book-expand {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 0.15rem;
+  overflow: hidden; }
+  .book-expand .book-expand-head {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    cursor: pointer; }
+  .book-expand .book-expand-content {
+    display: none;
+    padding: 1rem; }
+  .book-expand input[type="checkbox"]:checked + .book-expand-content {
+    display: block; }
+
+.expand__button {
+  color: darkred;
+  font-style: italic; }
+
+.dimbox {
+  background-color: #ffd;
+  border: 1px solid #bbd;
+  margin: 10pt;
+  padding: 6pt; }
+
+.workbook-todo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+  background-color: #f9d;
+  margin-bottom: 1rem;
+  font-size: 120%;
+  font-family: 'Courier New', Courier, monospace; }
+
+.workbook-todo > strong, .workbook-todo > div {
+  display: inline-block; }
+
+.workbook-future {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+  background-color: #9fd;
+  margin-bottom: 1rem;
+  font-size: 120%;
+  font-family: 'Courier New', Courier, monospace; }
+
+.workbook-future > strong, .workbook-future > div {
+  display: inline-block; }
+
+.page-rubric-container {
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem;
+  border: 1px solid darkslategray;
+  background-color: #F0E59f; }
+
+.page-rubric-grid {
+  border: 1px solid darkslategray;
+  display: grid;
+  grid-template-columns: auto auto 1fr; }
+
+.page-rubric-grid div {
+  border: 1px solid darkslategray; }
+
+.page-rubric-grid-header {
+  padding-top: 0.5rem;
+  grid-column: 1 / span 3;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: 600; }
+
+.page-rubric-grid-box {
+  grid-column: 1;
+  padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+  text-align: left; }
+
+.page-rubric-grid-points {
+  grid-column: 2;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  text-align: center; }
+
+.page-rubric-grid-desc {
+  grid-column: 3;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem; }
+
+.rubric-box-regular {
+  background-color: #f0f0f0; }
+
+.rubric-box-bonus {
+  background-color: #e7ffff; }
+
+.multifigure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.multifigure > figure {
+  margin: 1rem; }
+
+.includebox {
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 5px; }

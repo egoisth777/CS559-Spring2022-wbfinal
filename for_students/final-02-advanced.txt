@@ -1,0 +1,6 @@
+Advanced Thing:
+1. Morhing Ball that morphes from a sphere to a twisted box.
+2. Plane that utilizes the morphing techniques to have water like motion
+3. self-written semi transparent and self-glowing texture applied on multiple objects (train rail, parts of SkyCrappers) in the city. It has great render effect.
+4. self-written billboard shader that looks semi-transparent, self-glowing. It looks up for textures color and intensifies
+a specific channel according to the parameter passed into the constructor.

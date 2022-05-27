@@ -1,0 +1,17 @@
+Three different behaviors that you made:
+1. Car goes around the road (square)
+2. Plane goes in Lemniscate of Gerono curve where it also goes up and down
+3. Morphing ball has rings & and balls goes around it while the ball itself morphes. The whole object goes up and down
+
+One behavior that is not simple:
+Not simple: Train goes along the Bezier Spline rail.
+
+Animated Articulated Figure:
+Articulated: 1. Morphing ball has rings & and balls goes around it while the ball itself morphes.
+                The whole object goes up and down
+             2. Carousel motion
+
+Other Behaviors that you made: (backup in case something above doesn't count)
+- Cyber Adds Spins
+- The Carousel has horses goes up and down while it also spins, the snowMan on Carousel also spins
+- The water morphes

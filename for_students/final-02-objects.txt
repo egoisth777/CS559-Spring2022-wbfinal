@@ -1,0 +1,31 @@
+(Required) Two kinds of objects created for this assignment:
+1. MainMansion
+2. SkyCraper01
+
+(Required) Five other kinds of objects that you created (possibly in previous assignments):
+3. SkyCraper02
+4. SkyCraper03
+5. SkyCraper04
+6. SimpleWaterTank
+7. FancyTrain
+8. ResidentialBuilding01
+9. ResidentialBuilding02
+
+(Optional) Backup Objects (more objects that you created, in case the ones above don't count):
+- FancyRoad
+- CyberBillBoard
+- MorphingBall
+
+At least on of each type of object:
+Building/structure: SkyCrapper01,02,03,04,Residential Building01
+Vehicle: car01,car02
+Natural Element: tree
+
+Object loaded from a model file:
+Model: Skycrapper02, DNA
+
+An object with a shader that you wrote:
+ShaderObj: FancyRoad, CyberBillBoard
+
+Other Objects that you would like to note:
+WaterTank, Lantern, CyberSnowMan, Water..

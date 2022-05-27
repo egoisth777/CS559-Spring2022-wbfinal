@@ -1,0 +1,36 @@
+/*** Style Sheet for the 559 Tutorials ***/
+
+/** We always like to put borders around Canvas and SVG */
+canvas {
+  border: 1px solid black;
+}
+
+svg {
+  border: 1px solid black;
+}
+
+div.answerbox {
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div.notebox {
+    border: 2px solid darkred;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width:600px;  
+}
+
+.box-container {
+  width: min-content;
+}
+.box-label {
+  font-style: italic;
+  text-align: center;
+}
+.box-tile {
+  flex-basis: min-content;
+}

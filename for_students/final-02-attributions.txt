@@ -1,0 +1,31 @@
+List all attributions here, this include "self-attributions":
+
+Cars.js
+Self-attributions
+Billy Li - Workbook08 08-car.js
+
+ResidentialBuilding.js
+Self-attributions
+Billy Li - Workbook08 08-Builings.js
+
+Plane.js
+Self-attributions
+Billy Li - Workbook07 08-Builings.js
+
+
+cyberSnowMan.js
+Self-attributions
+Billy Li - Workbook07 08-ParkObjects.js
+
+DNA model
+https://free3d.com/3d-model/human-dna-43107.html
+
+Futuristic Building Model
+https://www.turbosquid.com/3d-models/scifi-futuristic-future-city-building-skyscraper-28-3d-1834948
+
+Textures:
+https://polyhaven.com/a/leather_red_03
+
+Morph Effect (FancyBall.js Reference Material)
+https://threejs.org/examples/webgl_morphtargets.html
+
